@@ -1,26 +1,22 @@
-sidenav = {
-	opened:false,
-	click:function() {
-		if(this.opened) {
-			this.hide();
-			this.opened = false;
-		} else {
-			this.show();
-			this.opened = true;
-		}
-	},
-	show:function() {
-		document.getElementById("sideNav").style.width = "100%";
-	},
-	hide:function() {
-		document.getElementById("sideNav").style.width = "0";
-	}
-};
+var date = new Date();
+var years = date.getFullYear();
+
+$(document).ready(function(){
+	$("#years").html(years)
+})
+
+//sidenav
+function showSideNav() {
+	$(".sidenav").show();
+}
+function hideSideNav() {
+	$(".sidenav").hide();
+}
 
 $(function() {
 	//switch the menu style in a area of site
 	$(window).on("scroll", function() {
-		var topSection = $("#icone");
+		var topSection = $("#center-top-content");
 		var topSectionOffset = topSection.offset();
 		var aboutSection = $(".sobre");
 		var aboutSectionOffset = aboutSection.offset();
