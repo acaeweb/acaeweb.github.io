@@ -1,5 +1,5 @@
 @charset("utf-8");
-body,html {margin:0;height: 100%; }
+body,html {margin:0; padding: 0; height: 100%; box-sizing: border-box; }
 
 
 @font-face {
@@ -12,22 +12,20 @@ body,html {margin:0;height: 100%; }
 }
 
 @media screen and (min-width:1201px){
-  #cel-img { width: 50%; height: 30%;  float: right; margin-top: -15%;}
-  .description { width: 40%; }
-  #center-top-content { width: 70%; margin-top: -55%; margin-left: 30%; }
-  img#icone { height: 100%; }
-  #center-top-content-buttons { margin-top: -22%; }
-  #logo { margin-left: 5%; margin-top: -10%; width: 30%; }
-  
+  #logo { width: 20%; margin-top: 5%; margin-left: 30%; }
+  #cel-img { width: 30%; margin-left: 67%; margin-top: -15%; }
+  .description { width: 40%; margin-left: -30%; margin-top: 15%;}
+  #center-top-content-buttons { margin-top: -10%; margin-left: 28%;}
   
   .sobre{width: 70%;}
   .Download { width: 10%; }
   
   #video { width: 70%; height: 80%; }
   
-  #contato img { height: 70%; }
-  #contato div#content { margin-top: -73%; height: 70%; }
+  /* form */
   form{ width: 40%; }
+  #contato { background-size: 100%; }
+  input[type='submit'] { width: 70%; }
   
   /*menu*/
   .menu-item { display: inline-block; }
@@ -35,21 +33,20 @@ body,html {margin:0;height: 100%; }
 }
 /*1200px – Desktops, notebooks com monitores widescreen*/
 @media screen and (max-width:1200px){
-  #cel-img { width: 40%; height: 60%;  float: right; margin-top: -12%;}
-  .description { width: 40%; margin-top: -10%;  }
-  #center-top-content { width: 70%; margin-top: -55%; margin-left: 30%; }
-  img#icone { height: 100%; }
-  #center-top-content-buttons { margin-top: -8%; }
-  #logo { margin-left: 5%; margin-top: -20%; width: 30%; }
+  #logo { width: 20%; margin-top: 5%; margin-left: 30%; }
+  #cel-img { width: 30%; margin-left: 67%; margin-top: -15%; }
+  .description { width: 40%; margin-left: -30%; margin-top: 15%;}
+  #center-top-content-buttons { margin-top: -10%; margin-left: 28%;}
   
   .sobre{width: 70%;}
   .Download { width: 14%; }
   
-  #video { width: 70%; height: 80%; }
+  #video { width: 70%; height: 100%; }
   
-  #contato img { height: 100%; }
-  #contato div#content { margin-top: -98%; height: 100%; }
+  /* form */
   form{ width: 40%; }
+  #contato { background-size: 100%; width: 100%;}
+  input[type='submit'] { width: 50%; }
   
   /*menu*/
   .menu-item { display: inline-block; }
@@ -58,20 +55,12 @@ body,html {margin:0;height: 100%; }
 
 /*960px – Tablets no formato paisagem e alguns monitores mais antigos*/
 @media screen and (max-width:960px){
-   #cel-img { width: 50%; height: 70%;  float: right; margin-top: -20%;}
-  .description { width: 40%; }
-  #center-top-content { width: 70%; margin-top: -55%;margin-left: 30%; }
-  img#icone { height: 100%; }
-  #center-top-content-buttons { margin-top: -5%; margin-left: -3%; }
-  #logo { margin-left: 5%; margin-top: -20%; width: 30%; }
-  
+   
   .sobre{width: 70%;}
   .Download { width: 14%; }
   
   #video { width: 70%; height: 80%; }
   
-  #contato img { height: 120%; }
-  #contato div#content { margin-top: -123%; height: 120%; }
   form{ width: 40%; }
   
   /*menu*/
@@ -81,20 +70,16 @@ body,html {margin:0;height: 100%; }
 
 /*768px – Tablets no formato retrato*/
 @media screen and (max-width:768px){
-   #cel-img { width: 50%; height: 60%;  float: right; margin-top: 30%;}
-  .description { width: 50%; margin-left: -40%; margin-top: 30%; }
-  img#icone { height: 50%; }
-  #center-top-content { /*background-color: #F00;*/ width: 70%; height: 40%; margin-top: -55%; margin-left: 30%;}
-  #center-top-content-buttons { margin-top: 5%; margin-left: -20%; }
-  #logo { margin-left: -10%; margin-top: 20%; width: 30%; }
+  #logo { width: 30%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 45%; margin-top: -35%; }
+  .description { width: 40%; margin-left: -35%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 10%;}
   
   .sobre{width: 90%;}
   .Download { width: 22%; }
   
   #video { width: 70%; height: 30%; }
   
-  #contato img { height: 50%; }
-  #contato div#content { margin-top: -53%; height: 50%; }
   form{ width: 60%; }
   
   /*menu*/
@@ -103,20 +88,15 @@ body,html {margin:0;height: 100%; }
 }
 
 @media screen and (max-width:570px){
-  #cel-img { width: 50%; height: 150%;  float: right; margin-top: -10%;}
-  .description { width: 50%; margin-left: -10%; margin-top: -3%; }
-  img#icone { height: 100%; }
-  #center-top-content { width: 70%; margin-top: -55%; margin-left: 30%;}
-  #center-top-content-buttons { margin-top: -20%; margin-left: 47.5%;}
-  #logo { margin-left: 5%; margin-top: -14%; width: 30%; }
+  #logo { width: 30%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 45%; margin-top: -35%; }
+  .description { width: 40%; margin-left: -35%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 10%;  }
   
   .sobre{width: 90%;}
   .Download { width: 22%; }
   
   #video { width: 70%; height: 80%; }
-  
-  #contato img { height: 70%; }
-  #contato div#content { margin-top: -77%; height: 70%; }
   form{ width: 60%; }
   
   /*menu*/
@@ -126,73 +106,64 @@ body,html {margin:0;height: 100%; }
 
 /*480px – Smartphones no formato paisagem com tela pequena*/
 @media screen and (max-width:480px){
-  #cel-img { width: 60%; height: 40%;  float: right; margin-top: 0;}
-  .description { width: 60%; margin-left: -30%; }
-  #center-top-content { width: 70%;margin-top: -55%; margin-left: 30%;}
-  img#icone { height: 100%; width: 100%; }
-  #center-top-content-buttons { margin-top: 0; }
-  #logo { margin-left: -13%; margin-top: -10%; width: 30%; }
-  
   .sobre{width: 90%;}
-  .Download { width: 10%; }
+  .Download { width: 30%; }
   
   #video { width: 70%; height: 80%; }
   
-  #contato img { height: 50%; }
-  #contato div#content { margin-top: -53%; height: 50%; }
   form{ width: 60%; }
   
+  #contato { background-size: 100% 125%; }
+  textarea { height: 4em; }
   /*menu*/
   .menu-item { display: none; }
   .menu-side { display: inline-block; }
 }
 
 
-
-@media screen and (max-width:340px){
-  #cel-img { width: 60%; height: 30%;  float: right; margin-top: -10%; margin-right: -9%;}
-  .description { width: 70%; margin-left: -30%; margin-top: -13%; font-size: 10px; }
-  #center-top-content { width: 70%;margin-top: -55%;margin-left: 30%; }
-  img#icone { height: 100%; }
-  #center-top-content-buttons { margin-top: -15%; margin-left: 48%; }
-  #logo { margin-left: 10%; margin-top: -25%; width: 40%; }
-  
-  .sobre{width: 50%;}
-  .Download { width: 10%; }
-  
-  #video { width: 70%; height: 80%; }
-  
-  /*menu*/
-  .menu-item { display: none; }
-  .menu-side { display: inline-block; }
-}
 
 /*320px – Smartphones no formato retrato com tela pequena*/
 @media screen and (max-width:320px){
-   #cel-img { width: 60%; height: 70%;  float: right; margin-top: -85%; margin-right: 93%;}
-  .description { width: 90%;  margin-left: 2%; margin-top: -65%; }
-  #center-top-content { width: 70%;margin-top: -55%; margin-left: 30%;}
-  img#icone { height: 370px; }
-  #center-top-content-buttons { margin-top: 14%; margin-left: 0%; }
-  #logo { margin-left: 20%; margin-top: -80%; width: 50%; }
+  #logo { width: 40%; margin-top: 15%; margin-left: 10%; }
+  #cel-img { width: 50%; margin-left: 50%; margin-top: -35%; }
+  .description { width: 50%; margin-left: -45%; margin-top: 30%;}
+  #center-top-content-buttons { margin-top: -12%; margin-left: 8%;  }
   
   .sobre{ width: 90%; }
   .Download { width: 30%; }
   
   #video { width: 70%; height: 80%; }
   
-  #contato img { height: 390px; }
-  #contato div#content { margin-top: -130%; height: 100%; }
+  /*form*/
   form{ width: 80%; }
+  input[type='submit'] { width: 70%; }
   
   /*menu*/
   .menu-item { display: none; }
   .menu-side { display: inline-block; }
 }
 
+/* Menu */
+#menu { z-index: 1; display: block; width: 100%; /*background-color: rgba(255, 255, 255, .9);*/ position: fixed; top: 0; /*box-shadow: 1px 1px 8px #2b2b2b;*/}
+#menu ul{ list-style:none; text-transform:uppercase;position:relative;}
+#menu li{ padding:2px; margin-left:2px; transition:background-color 1s;}
+#menu a {color: #FFF;text-decoration:none;}
+.menu-ative { border-bottom: 3px solid #0071bc; /* border-radius: 7px; */ }
+
+.menu2 { box-shadow: 1px 1px 8px #191919; }
+
+/*side nav*/
+.sidenav { display: none; height: 100%; width: 100%; position: fixed; z-index: 2; top: 0; left: 0;  background-color: rgba(0, 0, 0, .8); }
+.sidenav ul { list-style-type: none; padding: 0; margin: 6% 0 0; }
+.sidenav li { text-align: center; padding: 10px 0px;  }
+.sidenav li:hover a { border: 2px solid #3285A1; }
+.sidenav a { padding: 5px 15px; text-decoration: none; font-size: 1.5em; color: #FFF; transition: 0.3s; -webkit-transition: 0.3s; }
+.sidenav a:hover, offcanvas a:focus { color: #f1f1f1; }
+.sidenav .closebtn { position: absolute; top: 0; right: 25px; font-size: 2.25em; margin-left: 50px; margin-bottom: 10%; }
+
 
 /* logo */
-#logo { float: left; display: block;}
+#logo { float: left; display: inline-block;}
 /* celphone image*/
 #cel-img { display: inline-block; }
 
@@ -201,17 +172,14 @@ body,html {margin:0;height: 100%; }
 /* Texto App */
 .texto{font-family:Arial;font-size:18px;text-align:justify;display:block;margin-top:2%;padding: 0px 2%;}
 
-/*Estrutura da Imagem*/
-img#icone{position:relative; width: 100%; }
-
 /*conteudo no topo centro*/
-#center-top-content { position: absolute; display: block;  }
+#center-top-content { /*position: absolute;*/ display: block; background: url(../imagens/fundo.jpg);  }
 #center-top-content a { color: #fff; }
 #center-top-content .title { font-size: 28px; display: block; }
-#center-top-content .description { font-size: 20px; text-align: justify; display: block;}
+#center-top-content .description { font-size: 20px; text-align: justify; display: inline-block;}
 
 /*buttons top*/
-#center-top-content-buttons {  width: 100%; display: block; float: left; }
+#center-top-content-buttons { float: left;  width: 50%; display: block; }
 #center-top-content-buttons a { text-align: center; padding: 14px 6%; color: #FFF; background-color: rgba(0, 113, 188, .8); margin-left: 11%; 
 								border-radius: 10px; transition: background-color .5s; -webkit-transition: background-color .5s; }
 #center-top-content-buttons a:hover { background-color: rgba(0, 113, 188, .5); text-decoration: underline;}
@@ -227,6 +195,19 @@ img#icone{position:relative; width: 100%; }
 /* baixe o App */
 .baixar{font-family:Arial;font-size:18px;text-align:center;display:block;margin-top:4%;}
 
+/* contato */
+#contato { background: url(../imagens/fundo4.jpg); width: 100%; background-size: 100%; display: block;  background-repeat: no-repeat ;}
+#contato div#content { width: 100%;  }
+
+form{display: block; margin: 0 auto;}
+input, textarea{font-family:sans-serif;font-weight:normal;display: block;margin-top: 2%;margin-bottom: 1%;width: 100%;padding: 6px;
+                border-radius: 10px; border: 3px solid darkgray; }
+input:focus, textarea:focus{box-shadow: 0px 0px 3px #3b6dbf;}
+input[type='submit'] { display: block; background-color: #3b6dbf; border: 0px; padding: 14px 8px; color: #FFF; }
+h1{font-weight: 500; text-align:center; font-size: 28px;}
+
+
 /* Rodape */	  
-footer#rodape{padding: 2px;/*background-color: #000;*/clear:both;}
-footer#rodape p {text-align:center;text-decoration:none;color: #000;}
+footer#rodape{ padding: 3px 0; clear:both; width: 100%; display: block; }
+footer#rodape p {text-align:center; text-decoration:none;color: #000;}
+a.link { color: #4CB4CB; text-decoration: none;  }
