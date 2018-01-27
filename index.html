@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="pt-br">
   <head>
 	<title>ACAE Web</title>
@@ -8,15 +8,13 @@
 	<meta name="keywords" content="app educacional, educação, aplicativo educacional, app educacional para desenvolvimneto intelectual, site, app,">
 	<meta name="description" content="ACAE é um app educacional para crianças, que tem como objetivo ajudar no aprendizado do desenvolvimento da criança">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/form.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js "></script>
   </head>
   <body>
 	<div id="interface">
 
-	  <img id="icone" src="imagens/fundo.jpg">
+	  <!--<img id="icone" src="imagens/fundo.jpg">-->
 
 	  <div id="center-top-content">
 		<img id="logo" src="imagens/logo.png">
@@ -30,12 +28,12 @@
 
 	  <!-- side nav-->
 	  <div id="sideNav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onClick="sidenav.click();">&times;</a>
-		<div id="sideNavBack">
-		  <a href="#" id="#menu-inicio" onclick="sidenav.click()">Inicio</a>
-		  <a href="#sobre" onclick="sidenav.click()">Sobre</a>
-		  <a href="#contato" onclick="sidenav.click()">Contato</a> 
-		</div>
+		<a href="javascript:void(0)" class="closebtn" onClick="hideSideNav();">&times;</a>
+		<ul>
+		  <li><a href="#" id="#menu-inicio" onclick="hideSideNav()">Inicio</a></li>
+		  <li><a href="#sobre" onclick="hideSideNav()">Sobre</a></li>
+		  <li><a href="#contato" onclick="hideSideNav()">Contato</a></li>
+		</ul>
 	  </div>
 
 	  <!-- Menu -->
@@ -43,7 +41,7 @@
 		<ul>
 		  <li class="menu-ative menu-item"><a href="#"> Inicio </a></li>
 		  <li class="menu-item"><a href="#contato"> Contato </a></li>
-		  <li class="menu-side"><img src="imagens/sidenav_ic_light.png" onclick="sidenav.click();"></li>
+		  <li class="menu-side"><img src="imagens/sidenav_ic_light.png" onclick="showSideNav();"></li>
 		</ul>
 	  </div>
 
@@ -73,7 +71,7 @@
 	  <a class="Download" id="Download" href="https://drive.google.com/file/d/1JEMWjydEsL-kIdurhb3KWQykSbtsI1uS/view" target="_blank"> Download </a>
 
 	  <div id="contato">
-		<img src="imagens/fundo4.jpg" width="100%" height="50%">
+		<!--<img src="imagens/fundo4.jpg" width="100%" height="50%">-->
 		<div id="content">
 		  <h1>Fale Conosco</h1>
 		  <form method="get" id="fContato" action="mailto:Lucas.comercial.ltd@gmail.com">
@@ -90,7 +88,7 @@
 	  </div>
 	  <!-- Rodape -->
 	  <footer id="rodape">
-		<p>&copy; Direitos Autorais ACAE Web 2017 - Todos os Direitos Reservados.<br/> Site Desenvolvido Por <a href="https://www.facebook.com/Lucas.comercial.ltd" target="_blank">Lucas Silva</a>, <a href="https://www.facebook.com/gabrieldev525" target="_blank">Gabriel Victor</a> e Kevin Silva.</p>
+		<p>&copy; Direitos Autorais ACAE Web 2017 - Todos os Direitos Reservados.<br/> Site Desenvolvido Por <a href="https://www.facebook.com/profile.php?id=100010730289100" target="_blank" class="link">Lucas Silva</a> e <a href="https://www.facebook.com/profile.php?id=100003115526388" target="_blank" class="link">Gabriel Victor</a>.</p>
 	  </footer>
 	</div>
   </body>
